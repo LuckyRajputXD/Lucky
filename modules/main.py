@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'Title » {name1} {str(count).zfill(3)}\nBatch » {raw_text0}\nDownloaded By » {raw_text3}\n\n'
-                cc1 = f'Title » {name1} {str(count).zfill(3)}\nBatch » {raw_text0}\nDownloaded By » {raw_text3}\n\n'
+                cc = f'Title » {name1}\nBatch » {raw_text0}\nDownloaded By » {raw_text3}'
+                cc1 = f'Title » {name1}\nBatch » {raw_text0}\nDownloaded By » {raw_text3}'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
