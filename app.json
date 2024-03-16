@@ -7,16 +7,16 @@
         "video-extract",
         "pyrogram"
     ],
-    "repository": "https://github.com/Sawai12/Bhuriyatxt",
-    "success_url": "https://t.me/+Y2K9rQmgzaoyYjBk",
+    "repository": "https://github.com/LuckyRajputXD/ILuckyRobot",
+    "success_url": "https://t.me/BeingLuckyRajput",
     "stack": "container",
     "env": {
         "API_ID": {
-            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑰𝑫",
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝑷𝑷 𝑰𝑫",
             "required": true
         },
         "API_HASH": {
-            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝒑𝒊 𝑯𝒂𝒔𝒉",
+            "description": "𝑬𝒏𝒕𝒆𝒓 𝒀𝒐𝒖𝒓 𝑨𝑷𝑰 𝑯𝒂𝒔𝒉",
             "required": true
         },
         "BOT_TOKEN": {
