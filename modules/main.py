@@ -98,17 +98,6 @@ async def account_login(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    
-
-    await editable.edit("Enter A Captio To Add Otherwise Send   **no**")
-    input3: Message = await bot.listen(editable.chat.id)
-    raw_text3 = input3.text
-    await input3.delete(True)
-    highlighter  = f"️ ⁪⁬⁮⁮⁮"
-    if raw_text3 == 'no':
-        MR = highlighter 
-    else:
-        MR = raw_text3
    
     await editable.edit("Now Send The **Thumb Url**\nEg » ```https://telegra.ph/file/5e937c29a415223ffaf9e.jpg```\n\nor Send `no`")
     input6 = message = await bot.listen(editable.chat.id)
@@ -162,8 +151,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'Title » {name1}\nBatch » {raw_text0}\nDownloaded By » {raw_text3}'
-                cc1 = f'Title » {name1}\nBatch » {raw_text0}\nDownloaded By » {raw_text3}'
+                cc = f'**Title » {name1}\nBatch » {raw_text0}**'
+                cc1 = f'**Title » {name1}\nBatch » {raw_text0}**'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
