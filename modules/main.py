@@ -31,12 +31,12 @@ bot = Client(
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("Hi!\n\nGive /txt Command To Downlaod From A Text File.\n")
+    editable = await m.reply_text("▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰\n𝙏𝙓𝙏 𝙁𝙞𝙡𝙚 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙧 𝘼𝙣𝙙 𝙀𝙭𝙩𝙧𝙖𝙘𝙩𝙤𝙧 𝘽𝙤𝙩.\n▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰\n💠 𝙏𝙚𝙭𝙩 𝘿𝙤𝙬𝙣𝙡𝙤𝙖𝙙𝙚𝙧 / 𝙀𝙭𝙩𝙧𝙖𝙘𝙩𝙤𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:\n➭ 𝗣𝗿𝗲𝘀𝘀 /txt 𝗧𝗼 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 𝗟𝗶𝗻𝗸𝘀 𝗟𝗶𝘀𝘁𝗲𝗱. 𝗦𝗲𝗻𝗱 𝗧𝗫𝗧 𝗙𝗶𝗹𝗲 𝗙𝗢𝗥𝗠𝗔𝗧 {𝗙𝗶𝗹𝗲𝗡𝗮𝗺𝗲 : 𝗙𝗶𝗹𝗲𝗟𝗶𝗻𝗸}\n\n💠 𝙋𝙤𝙬𝙚𝙧 𝘾𝙤𝙢𝙢𝙖𝙣𝙙𝙨:\n➭ 𝗣𝗿𝗲𝘀𝘀 /Restart 𝗧𝗼 𝗥𝗲𝘀𝘁𝗮𝗿𝘁 𝗧𝗵𝗲 𝗕𝗼𝘁. [𝙊𝙣𝙡𝙮 𝙊𝙬𝙣𝙚𝙧]\n▰▱▱▱▱▱▱▱▱▱▱▱▱▱▱▰")
 
 
 @bot.on_message(filters.command("Restart"))
 async def restart_handler(_, m):
-    await m.reply_text("**Restarted**🚦", True)
+    await m.reply_text("Restarted🚦", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 
