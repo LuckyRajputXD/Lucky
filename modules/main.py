@@ -100,7 +100,7 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("Enter A Captio To Add Otherwise Send   **No**")
+    await editable.edit("Enter A Captio To Add Otherwise Send   **no**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -110,7 +110,7 @@ async def account_login(bot: Client, m: Message):
     else:
         MR = raw_text3
    
-    await editable.edit("Now Send The **Thumb Url**\nEg » ```https://telegra.ph/file/5e937c29a415223ffaf9e.jpg```\n\nor Send `No`")
+    await editable.edit("Now Send The **Thumb Url**\nEg » ```https://telegra.ph/file/5e937c29a415223ffaf9e.jpg```\n\nor Send `no`")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
@@ -162,8 +162,8 @@ async def account_login(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'Title » {name1} \nBatch » {raw_text0}\nDownload By » 🄻🅄🄲🄺🅈  🅁🄰🄹🄿🅄🅃\n\n'
-                cc1 = f'Title » {name1} \nBatch » {raw_text0}\nDownload By » 🄻🅄🄲🄺🅈  🅁🄰🄹🄿🅄🅃\n\n'
+                cc = f'Title » {name1} {str(count).zfill(3)}\nBatch » {raw_text0}\nDownloaded By » {raw_text3}\n\n'
+                cc1 = f'Title » {name1} {str(count).zfill(3)}\nBatch » {raw_text0}\nDownloaded By » {raw_text3}\n\n'
                 if "drive" in url:
                     try:
                         ka = await helper.download(url, name)
